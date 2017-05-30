@@ -1,8 +1,7 @@
-# Tattle Talk
+## Tattle Talk
 
-Not so simple chat application based on Socket.IO library.
+    Not so simple chat application based on Socket.IO library.
 
-Project is live at : [https://www.webchat.technophor.com](https://www.webchat.technophor.com).
 
 ## Description
 
@@ -13,9 +12,9 @@ This chat application is based upon following component
 ```
 ## Prerequisites
 
-NodeJs,
-NPM,
-MongoDB.
+    NodeJs
+    NPM
+    MongoDB.
 
 ## Running
 
@@ -43,23 +42,22 @@ Note: these instructions are for Ubuntu Linux based OS. Assuming nodejs, npm and
 ```
 ## Built With
 
-OS : Ubuntu 16.04 LTS (64-bit).
-
-Editor : Atom 1.17.2 (64-bit).
-
-                                                                                                          Browser : Mozilla Firefox 52.0.2 (64-bit).
-          Google Chrome 58.0.3029.110 (64-bit).
+    OS : Ubuntu 16.04 LTS (64-bit).
+    Editor : Atom 1.17.2 (64-bit).
+    Browser : Mozilla Firefox 52.0.2 (64-bit).
+              Google Chrome 58.0.3029.110
+                                                                                                          Google Chrome 58.0.3029.110 (64-bit).
 
 ## Third Party Libraries
 
-front-end : jQuery    - DOM malipulation,
-            moment.js - Formatting Date and Time.
-            Socket.io - Enables real-time bi-directional event-based communication.
+    front-end : jQuery    - DOM malipulation,
+                moment.js - Formatting Date and Time.
+                Socket.io - Enables real-time bi-directional event-based communication.
 
 ## Version
 
-This is first version 1.0.0
+    This is first version 1.0.0
 
 ## Authors
 
-Designed and Developed by: Sourav Das
+    Designed and Developed by: Sourav Das

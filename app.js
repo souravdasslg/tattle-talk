@@ -56,5 +56,5 @@ require('./config/auth-config')(passport);
 var ioServer = require(appRootDir+'/lib/lib.socket')(app);
 
 ioServer.listen(3000,function () {
-   console.log('Server is Live');
+    console.log('Server is Live');
 });
