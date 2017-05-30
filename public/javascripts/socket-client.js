@@ -122,7 +122,7 @@ $(function () {
     socket.on('chat message', function(recievedMessageBody){
         messageCount += 1;
         $("#"+recievedMessageBody.senderId+" .chat-alert").text('');
-        socket.emit('get_last_message', {hostId: clientId, clientId: friendID});
+        socket.emit('get_last_message', {hostId: clientId, clientId: recievedMessageBody.senderId});
         if(recievedMessageBody.senderId === clientId) {
           $('#chat_box').append($('<li class="right clearfix">' +
                 '<span class="chat-img pull-right">' +
@@ -239,15 +239,14 @@ $(function () {
     });
 
     socket.on('get_last_message_success',function (object) {
-        console.log(object);
         if(object.option.hostId===clientId)
         {
             if(object.message!==null || object.message!==undefined || object.message!==""){
-                $("#"+object.option.senderId+" .last-message").text(object.message.messageData);
-                $("#"+object.option.senderId+" .time").text(function () {
+                $("#"+object.message.recieverId+" .last-message").text(object.message.messageData);
+                $("#"+object.message.recieverId+" .time").text(function () {
                     return  moment(object.message.date).fromNow()
                 });
-                $("#"+object.option.senderId).prependTo("#friend-list");
+                $("#"+object.message.recieverId).prependTo("#friend-list");
 
             }
             else
@@ -328,7 +327,7 @@ $(function () {
 
     $('#logout').click(function () {
         socket.disconnect();
-        window.location.replace('http://localhost:3000/logout');
+        window.location.replace('/logout');
     });
 
 

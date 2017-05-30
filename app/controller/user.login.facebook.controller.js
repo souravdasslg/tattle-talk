@@ -39,7 +39,7 @@ exports.controller = function(app,passport) {
                         else {
                             //send the entire user object to API Consumer
                             req.session.user = user;
-                            res.redirect('http://localhost:3000/chat');
+                            res.redirect('/chat');
                         }
                     });//end save
                 } else {
@@ -53,7 +53,7 @@ exports.controller = function(app,passport) {
                         }
                         else {
                             req.session.user = user;
-                            res.redirect('http://localhost:3000/chat');
+                            res.redirect('/chat');
                             eventManager.loggedIn(user);
                         }
                     });

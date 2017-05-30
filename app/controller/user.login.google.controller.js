@@ -55,7 +55,7 @@ const eventManager = require('../../lib/lib.event');
                             else
                             {
                                 req.session.user = user;
-                                res.redirect('http://localhost:3000/chat');
+                                res.redirect('/chat');
                                 eventManager.loggedIn(user);
                             }
                         })
@@ -73,7 +73,7 @@ const eventManager = require('../../lib/lib.event');
                     else{
                         req.session.user = user;
                         eventManager.loggedIn(user);
-                        res.redirect('http://localhost:3000/chat');
+                        res.redirect('/chat');
 
 
                     }

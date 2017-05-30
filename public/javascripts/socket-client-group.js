@@ -39,6 +39,7 @@ $(function () {
     socket.on('chat message', function(recievedMessageBody){
         messageCount += 1;
         if(recievedMessageBody.senderId === clientId) {
+            socket.emit('get_group_last_message',groupID);
             $('#chat_box').append($('<li class="right clearfix">' +
                 '<span class="chat-img pull-right">' +
                 '<img src="http://bootdey.com/img/Content/user_1.jpg" alt="User Avatar"> ' +
@@ -182,7 +183,7 @@ $(function () {
           }
           return "Groups (" + (groupList.length) + ")";
       }
-    }).css()
+    }).css("color","blue")
     });
 
     socket.on('get_group_last_message_success',function(object){
@@ -286,7 +287,7 @@ $(function () {
 
     $('#logout').click(function () {
         socket.disconnect();
-        window.location.replace('http://localhost:3000/logout');
+        window.location.replace('/logout');
     });
 
 });

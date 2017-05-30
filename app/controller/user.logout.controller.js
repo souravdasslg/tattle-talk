@@ -9,7 +9,7 @@ exports.controller = function (app,passport) {
     router.get('/',auth.isAuthenticated,function (req,res) {
         req.session.destroy();
         req.logout();
-        res.redirect('http://localhost:3000')
+        res.redirect('/login')
     });
 
     app.use('/logout',router);
