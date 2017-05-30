@@ -1,0 +1,257 @@
+
+
+/*external */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  -family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    background: transparent;
+    /*background-image: url('https://source.unsplash.com/random/1600x900');*/
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.btn-fb {
+    background-color: #3B5998;
+}
+
+.btn-gplus {
+    background-color: #e15f4f;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+
+/*  Login Page */
+.login-page {
+  width: 400px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.texteffect {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    /*margin: 0 auto 100px;*/
+    margin-top: 85%;
+    padding: 45px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.md-form
+{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+.form input {
+  font-family: 'Open Sans', sans-serif;
+  outline: 0;
+  background: auto;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  /*background: #86BB71;*/
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  /*color: #FFFFFF;*/
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+
+.form .register-form {
+  display: none;
+}
+
+
+.loginBtn {
+  width: 66%;
+}
+.form {
+  background: rgba(255,255,255,0.2);
+}
+/*.form input {*/
+  /*background-color: white;*/
+/*}*/
+.form-line {
+  position: absolute;
+  left: 0px;
+  width: 360px;
+  margin-top: 2px;
+  border-bottom: 2px solid white;
+}
+.social-buttons div span {
+  font-weight: bold;
+}
+
+#fb-btn
+{
+  cursor: pointer;
+}
+
+#g-btn
+{
+  cursor: pointer;
+}
+
+.chat-window
+{
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+/* .bubble */
+.chat, .chat-history {
+    padding: 30px 30px 20px;
+    border-bottom: 2px solid white;
+}
+.chat, .chat-history ,.message-data {
+    margin-bottom: 15px;
+}
+.chat, .chat-history, .message-data-time {
+    color: #a8aab1;
+    padding-left: 6px;
+}
+.chat, .chat-history, .message {
+    color: white;
+    padding: 18px 20px;
+    line-height: 26px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 90%;
+    position: relative;
+}
+.chat, .chat-history, .message:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    border-width: 0 15px 15px;
+    border-style: solid;
+    border-color: #CCDBDC transparent;
+    display: block;
+    width: 0;
+}
+.chat, .chat-history, .you-message {
+    background: #CCDBDC;
+    color:#003366;
+}
+.chat, .chat-history, .me-message {
+    background: #E9724C;
+}
+.chat, .chat-history, .me-message:after {
+    border-color: #E9724C transparent;
+    right: 20px;
+    top: -15px;
+    left: auto;
+    bottom:auto;
+}
+.chat, .chat-message {
+    padding: 30px;
+}
+.chat, .chat-message, .fa-file-o, .chat, .chat-message, .fa-file-image-o {
+    font-size: 16px;
+    color: gray;
+    cursor: pointer;
+}
+
+.chat-ul li{
+    list-style-type: none;
+}
+
+ li
+ {
+   list-style-type: none;
+ }
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.you {
+    color: #CCDBDC;
+}
+
+.me {
+    color: #E9724C;
+}
+
+.time
+{
+    text-align:right;
+    font-size: small;
+    color: #5a5a5a;
+}
+
+#typing
+{
+    font-size: 10px;
+}
