@@ -12,7 +12,7 @@ module.exports = function (passport) {
     passport.use(new facebookStrategy({
             clientID: '364266763958779',
             clientSecret: 'ea2b29f0dee3827fdf1ff93009b42d08',
-            callbackURL: 'http://localhost:3000/login/facebook/return',
+            callbackURL: 'http://chat.shortscope.com/login/facebook/return',
             profileFields: ['id', 'emails', 'name']
         },
         function(accessToken, refreshToken, profile, cb) {
@@ -23,7 +23,7 @@ module.exports = function (passport) {
     passport.use(new googleStrategy({
             clientID: '983797450356-1itktuj6nmn3adq6pcopcreis56p73th.apps.googleusercontent.com',
             clientSecret: 'kVBVyWDd5HC5iCUGp_uJEjq9',
-            callbackURL: 'http://localhost:3000/login/google/return'
+            callbackURL: 'http://chat.shortscope.com/login/google/return'
         },
         function(accessToken, refreshToken, profile, cb) {
             cb(null, profile);
