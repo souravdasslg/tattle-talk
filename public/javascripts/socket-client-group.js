@@ -187,7 +187,6 @@ $(function () {
     });
 
     socket.on('get_group_last_message_success',function(object){
-        console.log(object);
         if(object.message)
         {
             $("#"+object.message.groupid+" .last-message").text(object.message.messageData);

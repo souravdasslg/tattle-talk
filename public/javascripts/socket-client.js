@@ -212,7 +212,6 @@ $(function () {
             if(OnlineUserArray.length>0)
             {
                 for (user in OnlineUserArray) {
-                    console.log(OnlineUserArray[user]);
                     if (OnlineUserArray[user].userId !== clientId) {
                         socket.emit('get_last_message', {hostId: clientId, clientId: OnlineUserArray[user].userId});
                         $('#friend-list').append($('<li class="friend_id" id=\"' + OnlineUserArray[user].userId + '\">' +
